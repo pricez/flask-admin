@@ -118,6 +118,6 @@ class ActionsMixin(object):
         if return_view:
             url = self.get_url('.' + return_view)
         else:
-            url = get_redirect_target() or self.get_url('.index_view')
+            url = get_redirect_target() or self.get_url('.index')
 
         return redirect(url)
